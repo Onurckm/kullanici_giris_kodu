@@ -1,0 +1,25 @@
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" && textBox2.Text == "")
+            {
+                MessageBox.Show("LÜTFEN TÜM ALANLARIN DOLU OLDUÐUNDAN EMÝN OLUN", "HATA");
+            }
+            else
+            {
+                if (textBox1.Text == "ONURR" && textBox2.Text == "1234")
+                {
+                    Form1 frm1 = new Form1();
+                    frm1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("HATALI KULLANICI ADI VEYA ÞÝFRE", "HATA");
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                }
+            }
+
+        
+    }
+}
